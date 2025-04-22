@@ -25,7 +25,6 @@ from .models import Loan,LoanAdmin
 
 admin.site.register(Loan,LoanAdmin)
 
-
 models.py:
 
 from django.db import models
