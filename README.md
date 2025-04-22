@@ -18,13 +18,15 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 # PROGRAM
+```
 admin.py:
 
 from django.contrib import admin
 from .models import Loan,LoanAdmin
 
 admin.site.register(Loan,LoanAdmin)
-
+```
+```
 models.py:
 
 from django.db import models
@@ -40,10 +42,10 @@ class Loan(models.Model):
 
 class LoanAdmin(admin.ModelAdmin):
 list_display=('loan_id','customer_name','loan_amount','interest_rate','loan_term','disbursement_date')
-
+```
 ![image](https://github.com/user-attachments/assets/d1fb6a22-7676-4521-849c-665c95e225dc)
 
-# OUTPUT
+# OUTPUT:
 
 ![image](https://github.com/user-attachments/assets/4e8a5ac3-3591-432c-b0bd-ee6ccc134469)
 ![image](https://github.com/user-attachments/assets/712207e5-3f2b-452f-b356-a6a72fa027bc)
@@ -51,5 +53,5 @@ list_display=('loan_id','customer_name','loan_amount','interest_rate','loan_term
 
 # Name:Blessing S
 # Reg no: 212224230039
-# RESULT
+# RESULT:
 Thus the program for creating a database using ORM hass been executed successfully
